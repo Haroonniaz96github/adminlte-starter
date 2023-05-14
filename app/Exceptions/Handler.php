@@ -37,10 +37,8 @@ class Handler extends ExceptionHandler
     public function register()
     {
         $this->reportable(function (Throwable $e) {
-            $userId = 0;
-            if (Auth::user()) {
-                $userId = Auth::user()->id;
-            }
+            $userId = Auth::user()->id ?? 1;
+
 
             $data = array(
                 'user_id' => $userId,

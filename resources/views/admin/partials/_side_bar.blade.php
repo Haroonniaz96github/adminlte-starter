@@ -149,7 +149,7 @@
                   </li>
                   <li class="nav-item">
                     <a href="{{ route('logs.index') }}"
-                        class="nav-link {{ request()->is('admin/dashboard') ? 'active' : '' }}">
+                        class="nav-link {{ request()->is('admin/logs') ? 'active' : '' }}">
                         <i class="nav-icon fas fa-exclamation-circle"></i>
                         <p>
                             Logs
